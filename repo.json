@@ -1,7 +1,33 @@
-
 {
-    "name": "Tuniflix",
-    "version": "1.0",
-    "url": "https://tuniflix.site",
-    "icon": "Tuniflix-icon.png"
+  "name": "Tuniflix",
+  "version": "1.0",
+  "url": "https://tuniflix.site",
+  "icon": "https://tuniflix.site/wp-content/uploads/2025/01/TUNIFLIX-1-25-2025-2.png",
+  "script": "Tuniflix.csx",
+  "source": [
+    {
+      "name": "Tuniflix Movies",
+      "url": "https://tuniflix.site",
+      "search": {
+        "url": "/?s={query}",
+        "type": "movies"
+      },
+      "fetch": {
+        "url": "/movies/{id}/",
+        "type": "movies"
+      }
+    },
+    {
+      "name": "Tuniflix Series",
+      "url": "https://tuniflix.site",
+      "search": {
+        "url": "/?s={query}",
+        "type": "series"
+      },
+      "fetch": {
+        "url": "/series/{id}/",
+        "type": "series"
+      }
+    }
+  ]
 }
